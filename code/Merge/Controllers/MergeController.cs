@@ -21,7 +21,7 @@ namespace servicethree.Controllers
             var animesResponseCall = await new HttpClient().GetStringAsync(animesService);
             var mangasService = $"{Configuration["mangasURL"]}/mangas";
             var mangasResponseCall = await new HttpClient().GetStringAsync(mangasService);
-            var mergedResponse = $"{animesResponseCall}{mangasResponseCall}";
+            var mergedResponse = $"{animesResponseCall} {mangasResponseCall}";
             return Ok(mergedResponse);
         }
     }
