@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animes", "Animes\Animes.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mangas", "Mangas\Mangas.csproj", "{DDD4A416-9803-4328-BC9C-54C32BB47824}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Merge", "Merge\Merge.csproj", "{0B087DD1-FAB9-462B-B608-99EE85196871}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,5 +60,17 @@ Global
 		{DDD4A416-9803-4328-BC9C-54C32BB47824}.Release|x64.Build.0 = Release|Any CPU
 		{DDD4A416-9803-4328-BC9C-54C32BB47824}.Release|x86.ActiveCfg = Release|Any CPU
 		{DDD4A416-9803-4328-BC9C-54C32BB47824}.Release|x86.Build.0 = Release|Any CPU
+		{0B087DD1-FAB9-462B-B608-99EE85196871}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B087DD1-FAB9-462B-B608-99EE85196871}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B087DD1-FAB9-462B-B608-99EE85196871}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0B087DD1-FAB9-462B-B608-99EE85196871}.Debug|x64.Build.0 = Debug|Any CPU
+		{0B087DD1-FAB9-462B-B608-99EE85196871}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0B087DD1-FAB9-462B-B608-99EE85196871}.Debug|x86.Build.0 = Debug|Any CPU
+		{0B087DD1-FAB9-462B-B608-99EE85196871}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B087DD1-FAB9-462B-B608-99EE85196871}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B087DD1-FAB9-462B-B608-99EE85196871}.Release|x64.ActiveCfg = Release|Any CPU
+		{0B087DD1-FAB9-462B-B608-99EE85196871}.Release|x64.Build.0 = Release|Any CPU
+		{0B087DD1-FAB9-462B-B608-99EE85196871}.Release|x86.ActiveCfg = Release|Any CPU
+		{0B087DD1-FAB9-462B-B608-99EE85196871}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
