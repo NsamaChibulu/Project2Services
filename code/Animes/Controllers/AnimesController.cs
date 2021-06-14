@@ -13,15 +13,17 @@ namespace serviceone.Controllers
     {
         private static readonly string[] Animes = new[]
         {
-            "JJK","Naruto","Bleach","One Piece",
+            "JJK","Naruto","Bleach","One Piece","Yasuke", "Deadman Wonderland", "Tokyo Revengers", "Child of the sea", "Attack on Titan", "Akame ga kill"
         };
 
         [HttpGet]
         public ActionResult<string> Get()
         {
             var rnd = new Random();
-            var returnIndex = rnd.Next(0, 4);
+            var returnIndex = rnd.Next(0, 9);
             return Animes[returnIndex].ToString();
         }
+
+
     }
 }
