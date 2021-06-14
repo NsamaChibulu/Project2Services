@@ -21,8 +21,23 @@ namespace servicethree.Controllers
             var animesResponseCall = await new HttpClient().GetStringAsync(animesService);
             var mangasService = $"{Configuration["mangasURL"]}/mangas";
             var mangasResponseCall = await new HttpClient().GetStringAsync(mangasService);
-            var mergedResponse = $"{animesResponseCall} {mangasResponseCall}";
-            return Ok(mergedResponse);
+            var mergedResponse = $" Anime of the month is {animesResponseCall}. Manga of the month is {mangasResponseCall}.";
+
+            if (animesResponseCall == "Bleach")
+            {
+                return Ok($"{mergedResponse} This is a top 3 Anime so we Highly recommend watching it !! Warning, top animes do have long episodes.");
+                
+                
+            }
+            else
+            {
+               return Ok(mergedResponse);
+            }
+            
         }
+
     }
-}
+} 
+
+   
+
