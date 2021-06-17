@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace serviceone.Controllers
+namespace Manga.Controllers
 {
     [ApiController]
     [Route("[controller]")]

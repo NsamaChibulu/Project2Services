@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.6.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frontend", "Frontend\Frontend.csproj", "{CF1AFA75-90A2-4EC5-B633-AE4AB026C554}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Frontend", "Frontend\Frontend.csproj", "{CF1AFA75-90A2-4EC5-B633-AE4AB026C554}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animes", "Animes\Animes.csproj", "{C57F657D-8115-46D1-823B-EABFFCA48896}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Animes", "Animes\Animes.csproj", "{C57F657D-8115-46D1-823B-EABFFCA48896}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mangas", "Mangas\Mangas.csproj", "{DDD4A416-9803-4328-BC9C-54C32BB47824}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mangas", "Mangas\Mangas.csproj", "{DDD4A416-9803-4328-BC9C-54C32BB47824}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Merge", "Merge\Merge.csproj", "{0B087DD1-FAB9-462B-B608-99EE85196871}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Merge", "Merge\Merge.csproj", "{0B087DD1-FAB9-462B-B608-99EE85196871}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject2", "TestProject2\TestProject2.csproj", "{61F598D0-C1F8-491F-AB09-4CE880324377}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,9 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{CF1AFA75-90A2-4EC5-B633-AE4AB026C554}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -72,5 +71,23 @@ Global
 		{0B087DD1-FAB9-462B-B608-99EE85196871}.Release|x64.Build.0 = Release|Any CPU
 		{0B087DD1-FAB9-462B-B608-99EE85196871}.Release|x86.ActiveCfg = Release|Any CPU
 		{0B087DD1-FAB9-462B-B608-99EE85196871}.Release|x86.Build.0 = Release|Any CPU
+		{61F598D0-C1F8-491F-AB09-4CE880324377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61F598D0-C1F8-491F-AB09-4CE880324377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61F598D0-C1F8-491F-AB09-4CE880324377}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{61F598D0-C1F8-491F-AB09-4CE880324377}.Debug|x64.Build.0 = Debug|Any CPU
+		{61F598D0-C1F8-491F-AB09-4CE880324377}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{61F598D0-C1F8-491F-AB09-4CE880324377}.Debug|x86.Build.0 = Debug|Any CPU
+		{61F598D0-C1F8-491F-AB09-4CE880324377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61F598D0-C1F8-491F-AB09-4CE880324377}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61F598D0-C1F8-491F-AB09-4CE880324377}.Release|x64.ActiveCfg = Release|Any CPU
+		{61F598D0-C1F8-491F-AB09-4CE880324377}.Release|x64.Build.0 = Release|Any CPU
+		{61F598D0-C1F8-491F-AB09-4CE880324377}.Release|x86.ActiveCfg = Release|Any CPU
+		{61F598D0-C1F8-491F-AB09-4CE880324377}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {735C5C4B-D9C6-4C8B-B447-14FE7B8EFB62}
 	EndGlobalSection
 EndGlobal

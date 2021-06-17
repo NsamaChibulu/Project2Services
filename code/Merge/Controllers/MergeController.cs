@@ -2,25 +2,31 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
 
-namespace servicethree.Controllers
+namespace Merge.Controllers
 {
     [ApiController]
     [Route("[controller]")]
     public class MergeController : ControllerBase
     {
-        private IConfiguration Configuration;
-        public MergeController(IConfiguration configuration)
+        private AppSettings Configuration;
+        public MergeController(IOptions<AppSettings> settings)
         {
-            Configuration = configuration;
+            Configuration = settings.Value;
         }
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var animesService = $"{Configuration["animesURL"]}/animes";
+            // Anime servicee (service Two)
+            var animesService = $"{Configuration.animesURL}/animes";
             var animesResponseCall = await new HttpClient().GetStringAsync(animesService);
-            var mangasService = $"{Configuration["mangasURL"]}/mangas";
+
+            // Manga service (service Three)
+            var mangasService = $"{Configuration.mangasURL}/mangas";
             var mangasResponseCall = await new HttpClient().GetStringAsync(mangasService);
+
+            // Merge service (service Four )
             var mergedResponse = $" Anime of the month is {animesResponseCall}.       Manga of the month is {mangasResponseCall}.";
 
             if (animesResponseCall == "Bleach"  || animesResponseCall == "Naruto" || animesResponseCall == "One Piece")
