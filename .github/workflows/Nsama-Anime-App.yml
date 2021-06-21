@@ -9,7 +9,7 @@ env:
   AZURE_WEBAPP_PUBLISH_PROFILE: ${{ secrets.Nsama_Anime_App_0152 }}
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 5.0.x
-  WORKING_DIRECTORY: ./sourcecode/Animes
+  WORKING_DIRECTORY: ./code/Animes
 jobs:
   build-and-deploy:
     runs-on: windows-latest
