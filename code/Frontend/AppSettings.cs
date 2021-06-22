@@ -7,6 +7,6 @@ namespace Frontend
 {
     public class AppSettings
     {
-        public string merge { get; set; }
+        public string mergeURL { get; set; }
     }
 }
