@@ -56,7 +56,7 @@ The MVP consists of two services that each generate a random output: Anime for S
 The project requires the creation of four service. Service Two (Anime) and Service Three (Manga) will generate random entries, which will then be merged into Service Four (Merge). Conditional statements will be used to identify which combination of merged Service Two and Three will generate the comments.
 Services Two, Three and Four will be created using webApp APIs in the ASP.NET Core framework. This will allow the generation and combining of the services to take place in an application that will allow them to communicate with each other. The Frontend will be in the form of a MVC web app. Below shows a diagram of how the project is structred to ensure the services do what they are meant to. 
 
-![image](https://user-images.githubusercontent.com/82107226/123133045-42001400-d447-11eb-8767-7424b3dd62c8.png)
+![image](https://user-images.githubusercontent.com/82107226/123149758-85637e00-d459-11eb-8e57-4dafbbc171d5.png)
 
 To deploy the services, it was decided to use 4 Azure App Services. This was opposed to the use of Azure Functions as the deployment of App Services was an area of focus for this project, as it wasn’t able to occur in the last project. The Infrastructure of the resources was written in Terraform , where the resources were created , configured , created then deployed via GitHub Actions with pipeplines generated for continuous development.
 
