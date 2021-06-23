@@ -140,6 +140,10 @@ After numerous attempts to indepnedtly research way of testing my Views with my 
 
 Before creating my resources in Terraform, I did not ignore files within my Gitignore file. This caused problems when coming to commit my code to GitHub as files over the limit of 100MB where present in the commit.
 
+- Ansibel
+
+One of the requirements was to ensure the use of Ansible. I was not abloe to do so as I did not fully understand the use cases, especially with regards to the project. As something that is quite powerful, I hope to be able to utlise to its best in future projects/work. 
+
 
 
 
