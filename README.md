@@ -105,9 +105,7 @@ With the code fully tested (excluding view), it was then time for the deployment
 
 With the details specified in our main.tf branch, we then were able to perform the following commands to initiate Terraform, plan Terraform to see if it will create the desired resources with our code, then apply the changes to create the configured resource group and resources in Azure. Image below.
 
-![image](https://user-images.githubusercontent.com/82107226/123123770-03665b80-d43f-11eb-868f-820965f41280.png)
-
-![image](https://user-images.githubusercontent.com/82107226/123123797-082b0f80-d43f-11eb-8c8a-7661141e590d.png)
+![image](https://user-images.githubusercontent.com/82107226/123149015-ba230580-d458-11eb-9176-cc84c40677f1.png)
 
 After the resources had been created, it was time to deploy our code with CI/CD pipelines. GitHub Actions were used instead of Azure DevOps as it was a new technology that I hadn’t used before and wanted to explore how powerful and convenient actions can be. I published the code via Visual Studio, ensuring that my commits and code in my repo were up to date and that I was working from the correct main branch.
 
