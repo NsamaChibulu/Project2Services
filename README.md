@@ -49,18 +49,19 @@ For this project, a risk assessment was modified and adjusted. Based on prior ex
 
 The MVP consists of two services that each generate a random output: Anime for Service Two and Manga for Service Three. Service Four will then merge these outputs to provide an output based on the outputs form Service Two and Three, providing a “comment” about the show if it is any of the “Big Three” (Naruto, One Piece, Bleach) and another comment if it is not. The user will then be able to view this in the Frontend, Service One. By refreshing the page, they get a different commbination of anime and manga names. Below shows a flow of how the logic of the services should work to produce the desired output. 
 
-![image](https://user-images.githubusercontent.com/82107226/123121479-19731c80-d43d-11eb-9249-dfd2bea0b1ea.png)
+![image](https://user-images.githubusercontent.com/82107226/123149758-85637e00-d459-11eb-8e57-4dafbbc171d5.png)
 
 
 # Software Architecture - Services  
 The project requires the creation of four service. Service Two (Anime) and Service Three (Manga) will generate random entries, which will then be merged into Service Four (Merge). Conditional statements will be used to identify which combination of merged Service Two and Three will generate the comments.
 Services Two, Three and Four will be created using webApp APIs in the ASP.NET Core framework. This will allow the generation and combining of the services to take place in an application that will allow them to communicate with each other. The Frontend will be in the form of a MVC web app. Below shows a diagram of how the project is structred to ensure the services do what they are meant to. 
 
-![image](https://user-images.githubusercontent.com/82107226/123149758-85637e00-d459-11eb-8e57-4dafbbc171d5.png)
+![image](https://user-images.githubusercontent.com/82107226/123149993-c8bdec80-d459-11eb-92ea-09919c857b68.png)
+
 
 To deploy the services, it was decided to use 4 Azure App Services. This was opposed to the use of Azure Functions as the deployment of App Services was an area of focus for this project, as it wasn’t able to occur in the last project. The Infrastructure of the resources was written in Terraform , where the resources were created , configured , created then deployed via GitHub Actions with pipeplines generated for continuous development.
 
-![image](https://user-images.githubusercontent.com/82107226/123122149-ac13bb80-d43d-11eb-9ac6-efcd1cd3730d.png)
+![image](https://user-images.githubusercontent.com/82107226/123150058-d7a49f00-d459-11eb-90ec-073ea153ec20.png)
 
 
 # Build 
