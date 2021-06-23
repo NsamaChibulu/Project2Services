@@ -28,7 +28,7 @@ The project followed the SFIA (Skills Framework for the Information Age) framewo
 
 # Project Management 
 
-For this project, an Agile framework was adopted. This was because a lot of the technologies were familiar, which allowed continuous development and improvement of them.  For my Kanban board , I used Asana, which allowed me to configure timescales to create my own version of mini sprints. 
+For this project, an Agile framework was adopted. This was because a lot of the technologies were familiar, which allowed continuous development and improvement of them.  For my Kanban board , I used Asana, which allowed me to configure timescales to create my own version of mini sprints (For a clearer view, please visit https://app.asana.com/0/1200365775193380/list).
 
 ![image](https://user-images.githubusercontent.com/82107226/123119287-49b9bb80-d43b-11eb-9654-33f8bf097245.png)
 
