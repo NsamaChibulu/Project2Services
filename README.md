@@ -100,11 +100,10 @@ Unit Testing was carried out on each of the controllers. The following images sh
 
 With the code fully tested (excluding view), it was then time for the deployment stage. Firstly, was to create the resources via Terraform. Terraform was the preferred method as it allowed the application of written Infrastructure as Code to deploy configurable resources into our azure portal. 
 
-![image](https://user-images.githubusercontent.com/82107226/123123727-f6e20300-d43e-11eb-8c75-80535d74940f.png)
+![image](https://user-images.githubusercontent.com/82107226/123148598-54cf1480-d458-11eb-8eb8-7aa3a7c9d8e7.png)
 
-![image](https://user-images.githubusercontent.com/82107226/123123738-fa758a00-d43e-11eb-92ae-8c2f385a8eec.png)
 
-With the details specified in our main.tf branch, we then were able to perform the following commands to initiate Terraform, plan Terraform to see if it will create the desired resources with our code, then apply the changes to created the configured resource group and resources in Azure. Image below.
+With the details specified in our main.tf branch, we then were able to perform the following commands to initiate Terraform, plan Terraform to see if it will create the desired resources with our code, then apply the changes to create the configured resource group and resources in Azure. Image below.
 
 ![image](https://user-images.githubusercontent.com/82107226/123123770-03665b80-d43f-11eb-868f-820965f41280.png)
 
