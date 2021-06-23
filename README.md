@@ -109,7 +109,7 @@ With the details specified in our main.tf branch, we then were able to perform t
 
 ![image](https://user-images.githubusercontent.com/82107226/123123797-082b0f80-d43f-11eb-8c8a-7661141e590d.png)
 
-After the resources had been created, it was time to deploy our code with CI/CD pipelines. GitHub Actions were used instead of Azure DevOps as it was a new technology that I hadn’t used before and wanted to explore how powerful and convenient actions can be. I published the code via Visual Studio, ensuring that my commits and code in my repo were up to date and that I was working from the correct main branch. The YAML files included in the repository show how each application has its own workflow produced and pipeline. This allowed for automatic changes to code without having to redeploy, as demonstrated in the demo. 
+After the resources had been created, it was time to deploy our code with CI/CD pipelines. GitHub Actions were used instead of Azure DevOps as it was a new technology that I hadn’t used before and wanted to explore how powerful and convenient actions can be. I published the code via Visual Studio, ensuring that my commits and code in my repo were up to date and that I was working from the correct main branch.
 
 ![image](https://user-images.githubusercontent.com/82107226/123123869-1711c200-d43f-11eb-843d-99e40417ccf9.png)
 
@@ -126,10 +126,30 @@ The applications where then successfully deployed to Azure DevOps, with the foll
 ![image](https://user-images.githubusercontent.com/82107226/123124004-33adfa00-d43f-11eb-8814-86c2b72652c4.png)
 
 
+ The YAML files included in the repository show how each application has its own workflow produced and pipeline. This allowed for automatic changes to code without having to redeploy, as demonstrated in the demo.  Below we have a image of one of the the YAML files (Anime) and its contents, inclduing the build and publish functionalities.
+ 
+ ![image](https://user-images.githubusercontent.com/82107226/123132069-3b24d180-d446-11eb-8269-1b253fca130f.png)
+
+
+
+# Issues that Occured
+
+- Testing of Views
+
+After numerous attempts to indepnedtly research way of testing my Views with my Frontend MVC app, I was unable to find a solution which fell into stride with my application and would allow the exclusion of View within the code coverage report. This resulted in having quite a low percentage for branch coverage.
+
+- Terraform
+
+Before creating my resources in Terraform, I did not ignore files within my Gitignore file. This caused problems when coming to commit my code to GitHub as files over the limit of 100MB where present in the commit.
 
 
 
 
+# Improvements for Next time
+
+-	Having more advanced features such as button to refresh or schema to interact with. This will allow better experience for the user, something that is highly important when building applications.
+-	Incorporation of an SQL database. Due to confidence levels of databases, I was not able to create and use on for my project. This would’ve have been highly useful as it would’ve allowed me to create a greater list of options for my manga and anime selections without disturbing the initial code in VS.
+-	One YAML file instead of four would’ve been neater and better, as this is a practise which is used commonly (would help if there are multiple deployments to make). This was not done, again, due to lack of confidence in making the changes and no time to do so. But will be aiming to go forth with this method in the future as the advantages of using it were understood by myself. 
 
 
 
