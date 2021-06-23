@@ -14,7 +14,7 @@ By Nsama Chibulu
 
 
 
-# Proejct Brief 
+# Project Brief 
 
 This project flows nicely from the first project. In the previous application, we were able to create, read, update, and delete anime entries associated with each month. In this project , two services are being created; an Anime service and a Manga’s service. The app will then be able to display, in a frontend, the Anime the user should watch for that month, and also the Manga they should read for that Month. If the user gets one of the big 3 (One Piece, Bleach or Naruto) , the merge service that is responsible for combining te Anime and Managa selections will work to create a message on whether the anime or manga is good ir now.  The output displayed changes every time there is a refresh. 
 
