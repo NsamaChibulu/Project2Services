@@ -32,6 +32,9 @@ resource "azurerm_app_service" "example" {
   location            = azurerm_resource_group.main.location
   resource_group_name = azurerm_resource_group.main.name
   app_service_plan_id = azurerm_app_service_plan.example.id
+  app_settings = {
+    "AppSettings__mergeURL" = "https://nsama-merge-app.azurewebsites.net"
+  }
   
 
 
@@ -60,7 +63,12 @@ resource "azurerm_app_service" "merge" {
   location            = azurerm_resource_group.main.location
   resource_group_name = azurerm_resource_group.main.name
   app_service_plan_id = azurerm_app_service_plan.example.id
-  
-
+  app_settings = {
+    "AppSettings__animesURL" = "https://nsama-anime-app.azurewebsites.net"
+    "AppSettings__mangasURL" = "https://nsama-manga-app.azurewebsites.net"
+  }
 
 }
+
+
+
