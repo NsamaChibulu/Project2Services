@@ -1,5 +1,4 @@
-﻿using Frontend;
-using Frontend.Controllers;
+﻿using Frontend.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
@@ -16,22 +15,22 @@ namespace TestProject2
 {
     public class HomeControllerTest
     {
+        
 
-        private AppSettings appSettings = new AppSettings()
-        {
-            mergeURL = "https://nsama-merge-app.azurewebsites.net"
-        };
         [Fact]
-        public async void GetFrontendTest()
+        public async Task GetStringAsyncTest()
         {
-            var options = new Mock<IOptions<AppSettings>>();
-            options.Setup(x => x.Value).Returns(appSettings);
+           
+            //arrange 
+            HomeController homeController = new HomeController(Options.Object);
+            var homeControllerResult = await homeController.Index();
 
-            HomeController homeController = new HomeController(options.Object);
-            var homeContollerResult = await homeController.Index();
+            //Action
+            Assert.IsType<ActionResult<string>>(homeControllerResult);
 
-            Assert.NotNull(homeContollerResult);
-            //Assert.IsType<OkObjectResult>(homeContollerResult);
+            //Assert
+            Assert.NotNull(homeControllerResult);
+
         }
     }
 }
